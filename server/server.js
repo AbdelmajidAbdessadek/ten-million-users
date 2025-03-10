@@ -7,7 +7,7 @@ const app = express();
 const PORT = 5000;
 app.use(cors());
 
-const USERS_FILE = 'users.txt'; // Assurez-vous que le fichier est bien à cet emplacement
+const USERS_FILE = 'users.txt';
 
 app.get('/users', async (req, res) => {
     const letter = req.query.letter;
