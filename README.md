@@ -18,10 +18,9 @@ A high-performance web application built with **React.js** and **Node.js (Expres
 ## 🛠️ Installation & Setup
 
 ### 1️⃣ Clone the Repository
-``
-git clone https://github.com/yourusername/large-user-list.git
-cd large-user-list
-``
+```
+git clone https://github.com/AbdelmajidAbdessadek/ten-million-users.git
+```
 
 ### 2️⃣ Backend Setup
 
