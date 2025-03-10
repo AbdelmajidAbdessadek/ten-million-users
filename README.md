@@ -27,7 +27,7 @@ git clone https://github.com/AbdelmajidAbdessadek/ten-million-users.git
 ## Navigate to the backend folder:
 
 ```
-cd backend
+cd server
 ```
 
 ## Install dependencies:
@@ -49,7 +49,7 @@ node server.js
 ## Navigate to the frontend folder
 
 ```
-cd backend
+cd client
 ```
 
 ## Install dependencies:
