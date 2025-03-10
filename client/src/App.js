@@ -9,7 +9,6 @@ const App = () => {
     const [page, setPage] = useState(1);
     const [totalUsers, setTotalUsers] = useState(0);
 
-    // ✅ Utilisation de useCallback pour éviter la recréation de la fonction à chaque rendu
     const fetchUsers = useCallback(async (pageNumber, reset = false) => {
         const url = selectedLetter ? 
             `http://localhost:5000/users?letter=${selectedLetter}&page=${pageNumber}` : 
@@ -22,10 +21,9 @@ const App = () => {
         } catch (error) {
             console.error(error);
         }
-    }, [selectedLetter]); // ✅ Ajout de selectedLetter comme dépendance
-
+    }, [selectedLetter]); 
     useEffect(() => {
-        setUsers([]); // Réinitialise les utilisateurs lors d'un changement de filtre
+        setUsers([]); 
         setPage(1); // Réinitialise la pagination
         fetchUsers(1, true);
     }, [selectedLetter, fetchUsers]); // ✅ Ajout de fetchUsers comme dépendance
