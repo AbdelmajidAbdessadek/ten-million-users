@@ -49,6 +49,10 @@ node server.js
 
 ## Navigate to the frontend folder
 
+```
+cd backend
+```
+
 ## Install dependencies:
 
 ## Start the frontend application:
